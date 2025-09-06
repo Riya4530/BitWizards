@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenRent - FAQ</title>
+    <link rel="stylesheet" href="faq.css" />
+</head>
+<body>
+    <header class="header">
+        <img src="photos/logo.jpg" alt="GreenRent Logo" class="logo">
+        <span class="brand">Green<span>Rent</span></span>
+        <nav class="header-links">
+            <a href="login.html" class="home-link" id="auth-link">Login</a>
+            <a href="index.html" class="home-link">Back to Home</a>
+        </nav>
+    </header>
+    <main>
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">How does GreenRent work?</div>
+                    <div class="faq-answer">GreenRent allows you to rent sustainable products like electronics, tools, and outdoor gear. Browse items, reserve them for a daily rate, and return them when you're done. It's eco-friendly and cost-effective!</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What are the rental terms?</div>
+                    <div class="faq-answer">Rentals are charged per day. You can reserve items through our website, and we'll deliver them to your specified location. Returns must be made within the agreed rental period. Check our Terms of Rental for details.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How do I create an account?</div>
+                    <div class="faq-answer">Click "Sign Up" on the login page, provide your name, email, and password, and submit the form. You'll receive a confirmation, and then you can log in to start renting.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Is GreenRent sustainable?</div>
+                    <div class="faq-answer">Yes! We promote sustainability by encouraging renting over buying, reducing waste, and offering eco-friendly products. Learn more on our Sustainability page.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How can I contact support?</div>
+                    <div class="faq-answer">Reach out via our Contact Us page or email support@greenrent.com. We're available 24/7 to assist with any issues or questions.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="terms.html">Terms of Rental</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+        </div>
+        <p>© 2025 GreenRent - Sustainable Rentals</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const isActive = question.classList.contains('active');
+                    document.querySelectorAll('.faq-question').forEach(q => {
+                        q.classList.remove('active');
+                        q.nextElementSibling.classList.remove('active');
+                    });
+                    if (!isActive) {
+                        question.classList.add('active');
+                        answer.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

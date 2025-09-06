@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenRent - Login</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f0fdf4;
+            color: #222;
+        }
+        .header {
+            background: #2d6a4f;
+            color: #ececec;
+            display: flex;
+            align-items: center;
+            padding: 1em 2em 0.7em 2em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            justify-content: flex-start;
+        }
+        .logo {
+            height: 60px;
+            border-radius: 8px;
+            margin-right: 18px;
+        }
+        .brand {
+            font-size: 1.6em;
+            font-weight: bold;
+            margin-left: 10px;
+            letter-spacing: 1px;
+        }
+        .brand span {
+            color: #b7e4c7;
+        }
+        .home-link {
+            margin-left: auto;
+            color: #ececec;
+            text-decoration: underline;
+            font-size: 1em;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .home-link:hover {
+            color: #b7e4c7;
+        }
+        .login-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .login-box {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #2e7d32;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .login-btn {
+            background-color: #a5d6a7;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .login-btn:hover {
+            background-color: #81c784;
+        }
+        .signup-text {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .signup-text a {
+            color: #2e7d32;
+            text-decoration: none;
+        }
+        .signup-text a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #2d6a4f;
+            color: #ececec;
+            text-align: center;
+            padding: 2em 0 1em 0;
+            margin-top: 3em;
+            border-top: 1px solid #b7e4c7;
+            font-size: 1em;
+        }
+        .footer-links a {
+            color: #ececec;
+            margin: 0 12px;
+            text-decoration: underline;
+            font-size: 1em;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover {
+            color: #b7e4c7;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="photos/logo.jpg" alt="GreenRent Logo" class="logo">
+        <span class="brand">Green<span>Rent</span></span>
+        <a href="index.html" class="home-link">Back to Home</a>
+    </header>
+    <div class="login-container">
+        <h2>Login to GreenRent</h2>
+        <div class="login-box">
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+            <p class="signup-text">Don't have an account? <a href="signup.html">Sign up</a></p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-links">
+            <a href="terms.html">Terms of Rental</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+        </div>
+        <p>© 2025 GreenRent - Sustainable Rentals</p>
+    </footer>
+</body>
+</html>

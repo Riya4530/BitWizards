@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmation</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .confirmation-container {
+      background: #fff;
+      padding: 2rem 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    h1 {
+      color: #28a745;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      font-size: 16px;
+      margin: 8px 0;
+    }
+
+    .order-id {
+      margin: 15px 0;
+      font-weight: bold;
+      color: #333;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #007bff;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #0056b3;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="confirmation-container">
+    <h1>✅ Order Confirmed</h1>
+    <p>Thank you for renting with us! Your order has been successfully placed.</p>
+    <p class="order-id">Order ID: <span id="orderId"></span></p>
+    <p>We’ll send you the details shortly via email.</p>
+    <a href="index.html" class="btn">Back to Home</a>
+  </div>
+
+  <script>
+    // Function to generate a unique order ID (timestamp + random digits)
+    function generateOrderId() {
+      const timestamp = Date.now().toString(36); 
+      const randomNum = Math.floor(Math.random() * 10000).toString(36);
+      return "ORD-" + timestamp + "-" + randomNum.toUpperCase();
+    }
+
+    document.getElementById("orderId").innerText = generateOrderId();
+  </script>
+</body>
+</html>

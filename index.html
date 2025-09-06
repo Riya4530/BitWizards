@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenRent | Rent Sustainable Items</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="photos/logo.jpg" alt="GreenRent Logo">
+            </div>
+           <div class="location-icon">
+                    <p class="top-text">Deliver to</p>&nbsp;
+                    <i class="fa-solid fa-location-dot"> </i>
+                    <p class="bottom-text"> Your City</p>
+            </div>
+            <div class="nav-search">
+                <select class="search-dropdown">
+                    <option>All Categories</option>
+                    <option>Electronics</option>
+                    <option>Tools</option>
+                    <option>Outdoor Gear</option>
+                    <option>Furniture</option>
+                    <option>Footwear</option>
+                    <option>Vehicles</option>
+                    <option>Clothing</option>
+                    <option>Accessories</option>
+                    <option>Jewelry</option>
+                </select>
+                <input type="text" placeholder="Search Rental Items" class="search-box" id="searchInput">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="account-option dropdown">
+                    <a href="login.html">Login</a>
+                </div>
+                <a href="cart.html" class="cart">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span id="cart-count">0</span>
+</a>
+
+            </div>
+        </nav>
+      <header>
+        <div class="menu-bar">
+            <ul class="menu-links">
+                <li><a href="allrentals.html">All Rentals</a></li>
+                <li><a href="dailydeals.html">Daily Deals</a></li>
+                <li><a href="hiw.html">How It Works</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="photos/banner.png" alt="Promotional Banner">
+        </section>
+        <section class="products" id="product-section">
+            <h2>Popular Rentals</h2>
+            <div class="product-grid">
+                <div class="product-card" data-category="Electronics">
+                    <img src="https://images-cdn.ubuy.co.in/66ec14a372437f6c6c144eee-canon-eos-4000d-dslr-camera-ef-s-18-55.jpg" alt="Camera">
+                    <h3>DSLR Camera</h3>
+                    <p>500rs/day</p>
+                    <button class="add-to-cart" data-product="DSLR Camera" data-price="500">Reserve Now</button>
+                </div>
+                <div class="product-card" data-category="Tools">
+                    <img src="https://cdn.thewirecutter.com/wp-content/media/2020/12/powerdrills-2048px-0568.jpg?auto=webp&quality=75&width=1024" alt="Power Drill">
+                    <h3>Power Drill</h3>
+                    <p>80rs/day</p>
+                    <button class="add-to-cart" data-product="Power Drill" data-price="80">Reserve Now</button>
+                </div>
+                <div class="product-card" data-category="Furniture">
+                    <img src="photos/chair.jpg" alt="Chair">
+                    <h3>Chair</h3>
+                    <p>100rs/day</p>
+                    <button class="add-to-cart" data-product="Chair" data-price="100">Reserve Now</button>
+                </div>
+                <div class="product-card" data-category="Vehicles">
+                    <img src="photos/activa.jpg" alt="Activa 3G">
+                    <h3>Activa 3G</h3>
+                    <p>3500rs/day</p>
+                    <button class="add-to-cart" data-product="Activa 3G" data-price="3500">Reserve Now</button>
+                </div>
+                <div class="product-card" data-category="Accessories">
+                    <img src="photos/bag.jpg" alt="bag">
+                    <h3>Bag</h3>
+                    <p>100rs/day</p>
+                    <button class="add-to-cart" data-product="Bag" data-price="100">Reserve Now</button>
+                </div>
+                <div class="product-card" data-category="Tools">
+                    <img src="photos/ladder.jpeg" alt="Ladder">
+                    <h3>Ladder</h3>
+                    <p>100rs/day</p>
+                    <button class="add-to-cart" data-product="Ladder" data-price="100">Reserve Now</button>
+                </div>
+            </div>
+        </section>
+        <section class="products" id="product-section-2">
+            <div class="product-grid">
+                <div class="product-card" data-category="Vehicles">
+                    <img src="photos/bike.jpg" alt="bike">
+                    <h3>Bike</h3>
+                    <p>4000rs/day</p>
+                    <button class="add-to-cart" data-product="Bike" data-price="4000">Reserve Now</button>
+                </div>
+                <div class="product-card" data-category="Vehicles">
+                    <img src="photos/cycle.png" alt="cycle">
+                    <h3>cycle</h3>
+                    <p>2000rs/day</p>
+                    <button class="add-to-cart" data-product="cycle" data-price="2000">Reserve Now</button>
+                </div>
+                <div class="product-card" data-category="Clothing">
+                    <img src="photos/blazer.png" alt="Blazer">
+                    <h3>Blazer</h3>
+                    <p>150rs/day</p>
+                    <button class="add-to-cart" data-product="Blazer" data-price="150">Reserve Now</button>
+                </div>
+                <div class="product-card" data-category="Footwear">
+                    <img src="photos/fshoes.jpg" alt="Fashion shoes">
+                    <h3>Fashion Shoes</h3>
+                    <p>400rs/day</p>
+                    <button class="add-to-cart" data-product="Fashion Shoes" data-price="400">Reserve Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="photos/necklace.jpg" alt="Necklace">
+                    <h3>Necklace</h3>
+                    <p>5000rs/day</p>
+                    <button class="add-to-cart" data-product="Necklace" data-price="150">Reserve Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <div class="footer-links">
+        <a href="terms.html">Terms of Rental</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+    </div>
+    <p>&copy; 2025 GreenRent - Sustainable Rentals</p>
+</footer>
+    <script src="script.js"></script>
+    <script src="server.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background:white;
+    margin: 0;
+    color: #222;
+}
+
+.header {
+    background: #2d6a4f;
+    color: #ececec;
+    display: flex;
+    align-items: center;
+    padding: 1em 2em 0.7em 2em;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 60px;
+    border-radius: 8px;
+    margin-right: 1em;
+}
+
+.page-title {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.hiw-steps {
+    max-width: 600px;
+    margin: 2em auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+}
+
+.hiw-steps ol {
+    padding-left: 1.2em;
+}
+
+.hiw-steps li {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+}
+
+.return-reward {
+    max-width: 600px;
+    margin: 1em auto;
+    background: #e6ffe6;
+    padding: 1.5em;
+    border-radius: 8px;
+    border-left: 6px solid #43a047;
+    box-shadow: 0 1px 4px rgba(44, 62, 80, 0.05);
+}
+
+.return-reward h2 {
+    color: #388e3c;
+    margin-top: 0;
+}
+
+.late-fee-warning {
+    max-width: 600px;
+    margin: 1em auto;
+    background: #ffe6e6;
+    padding: 1.5em;
+    border-radius: 8px;
+    border-left: 6px solid #e53935;
+    box-shadow: 0 1px 4px rgba(44, 62, 80, 0.05);
+}
+
+.late-fee-warning h2 {
+    color: #d32f2f;
+    margin-top: 0;
+}
+
+.rental-agreement {
+    max-width: 600px;
+    margin: 2em auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+}
+
+.rental-agreement h2 {
+    color: #2e7d32;
+    margin-top: 0;
+}
+
+.rental-agreement ul {
+    margin-left: 1.2em;
+    margin-bottom: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 2em 0 1em 0;
+    background:#2d6a4f;
+    color: #ececec;
+    font-size: 1em;
+    margin-top: 3em;
+    border-top: 1px solid #c8e6c9;
+}
